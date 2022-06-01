@@ -5,8 +5,6 @@ from PIL import Image
 import numpy as np
 import os
 
-model1 = load_model("static\models\model_1.h5")
-model2 = load_model("static\models\model_2.h5")
 
 app = Flask(__name__)
 
@@ -22,6 +20,7 @@ PATH = ""
 
 @app.route('/prediction1', methods=['POST'])
 def predictor1():
+    model1 = load_model("static\models\model_1.h5")
     image = request.files['image']
     name = request.form.get('name')
     global NAME
@@ -53,6 +52,7 @@ def predictor1():
 
 @app.route('/prediction2', methods=['POST'])
 def predictor2():
+    model2 = load_model("static\models\model_2.h5")
     image = request.files['image']
     name = request.form.get('name')
     global NAME
@@ -79,7 +79,6 @@ def predictor2():
         p = 100 - (result.squeeze() * 100)
         print("No tumor")
         return render_template('prediction2.html', data=[f"No Tumor detected", name])
-    # return render_template('ind
 
 
 @app.route('/load_img')

@@ -16,17 +16,22 @@ def hello_world():
 
 NAME = ""
 PATH = ""
+i = 0
+j = 0
 
 
 @app.route('/prediction1', methods=['POST'])
 def predictor1():
-    model1 = load_model("static\models\model_1.h5")
+    global i
+    if i == 0:
+        global model1
+        model1 = load_model("static/models/model_1.h5")
     image = request.files['image']
     name = request.form.get('name')
     global NAME
     NAME = name
     print(f"Name = {name}")
-    path = fr'static\user_images\{name}.jpg'
+    path = fr'static/user_images/{name}.jpg'
     global PATH
     PATH = path
     image.save(path)
@@ -52,13 +57,17 @@ def predictor1():
 
 @app.route('/prediction2', methods=['POST'])
 def predictor2():
-    model2 = load_model("static\models\model_2.h5")
+    global j
+    if j == 0:
+        global model2
+        model2 = load_model("static/models/model_2.h5")
+    # model2 = load_model("static\models\model_2.h5")
     image = request.files['image']
     name = request.form.get('name')
     global NAME
     NAME = name
     print(f"Name = {name}")
-    path = fr'static\user_images\{name}.jpg'
+    path = fr'static/user_images/{name}.jpg'
     global PATH
     PATH = path
     image.save(path)
@@ -93,6 +102,6 @@ def load_img():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True, host='0.0.0.0')
     app.config['UPLOAD_FOLDER'] = PATH
     # app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 1

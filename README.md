@@ -33,5 +33,5 @@ To do so:-
 ```
     flask run
 ```
-# NOTE:
-There are chances that the models(model_1.h5 or model_2.h5) may not get downloaded due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
+## NOTE:
+There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)

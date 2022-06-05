@@ -1,8 +1,8 @@
 # BTD_Web
 This is a web app that run in integration with [`this repo.`](https://github.com/SohamRatnaparkhi/BrainTumorDetection)
-This is Flask app.
+This is `Flask app`. Its `Docker Image` is available as well.
 
-## Run the following commands int the terminal to use this app locally.
+## Run the following commands in the terminal to use this app locally.
 - [Install `git`](https://git-scm.com/downloads)
 - [Python3](https://www.python.org/downloads/)
 
@@ -33,5 +33,24 @@ To do so:-
 ```
     flask run
 ```
+
+## Using its Docker Image
+- Setup [Docker](https://docs.docker.com/compose/gettingstarted/)
+- Setup [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/)
+- Then run the following commands
+```
+  docker pull sohamkr/brain-tumor-detector
+   ```
+- After the image is successfully pulled, then enter following command:
+```
+docker run -p 8000:5000 sohamkr/brain-tumor-detector
+```
+In the web-browser type `localhost:8000` to view the app.
+If some error occurs, then refer to official Docker Documentation.
+
 ## NOTE:
-There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
+* There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
+* There are chances that while running app locally on Windows, the app might give errors (`OS ERROR`). In such a case, please replace `/` with `\` or vice-versa for the respective error.
+* In any other case, raise an issue.
+
+---------- THANK YOU -----------

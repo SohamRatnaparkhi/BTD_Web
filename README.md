@@ -1,6 +1,7 @@
 # BTD_Web
-This is a web app that run in integration with [`this repo.`](https://github.com/SohamRatnaparkhi/BrainTumorDetection)
-This is `Flask app`. Its `Docker Image` is available as well.
+This is a web app that run in integration with [`this repo`](https://github.com/SohamRatnaparkhi/BrainTumorDetection) as the model that I have used for detection has its code in it.
+- This is `Flask app`. 
+- Its `Docker Image` is available as well.
 
 ## Run the following commands in the terminal to use this app locally.
 - [Install `git`](https://git-scm.com/downloads)

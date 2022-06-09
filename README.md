@@ -54,4 +54,12 @@ If some error occurs, then refer to official Docker Documentation.
 * There are chances that while running app locally on Windows, the app might give errors (`OS ERROR`). In such a case, please replace `/` with `\` or vice-versa for the respective error.
 * In any other case, raise an issue.
 
+## Screenshots
+![image](https://user-images.githubusercontent.com/92905626/172810027-db253cad-fb59-4c7f-bb0d-cd2286343147.png)
+![image](https://user-images.githubusercontent.com/92905626/172810327-413c157b-4d68-4cc2-adad-ebfe1890e138.png)
+
+- Output screen after submitting the required details:
+![image](https://user-images.githubusercontent.com/92905626/172810547-c09d62ae-7559-497a-8ed8-4e384b243b50.png)
+
+
 ---------- THANK YOU -----------

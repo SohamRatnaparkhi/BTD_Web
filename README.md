@@ -50,7 +50,7 @@ In the web-browser type `localhost:8000` to view the app.
 If some error occurs, then refer to official Docker Documentation.
 
 ## NOTE:
-* There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
+* There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded (pulled) due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
 * There are chances that while running app locally on Windows, the app might give errors (`OS ERROR`). In such a case, please replace `/` with `\` or vice-versa for the respective error.
 * In any other case, raise an issue.
 

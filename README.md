@@ -47,7 +47,8 @@ To do so:-
 docker run -p 8000:5000 sohamkr/brain-tumor-detector
 ```
 In the web-browser type `localhost:8000` to view the app.
-If some error occurs, then refer to official Docker Documentation.
+If some errors occur, feel free to comment in `discussions` section or raise an `issue`.
+Anyways, you can always refer to official Docker Documentation.
 
 ## NOTE:
 * There are chances that the models (`model_1.h5` or `model_2.h5`) may not get downloaded (pulled) due to some `lfs error`. In such a case, you will need to download the models from [this link](https://drive.google.com/drive/folders/1sBMxV7Aa5gym7jIKqKJbaYoTEmnLB-Ga?usp=sharing)
